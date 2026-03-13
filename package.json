@@ -1,0 +1,22 @@
+{
+  "name": "new-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MERN Algorithm Visualizer (sorting + pathfinding) with presets API.",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n SERVER,CLIENT -c cyan,magenta \"npm -w server run dev\" \"npm -w client run dev\"",
+    "build": "npm -w client run build",
+    "lint": "npm -w client run lint",
+    "start": "npm -w server run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
